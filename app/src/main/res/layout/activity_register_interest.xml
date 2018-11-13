@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterInterest">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/reg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="contentDescription"/>
+    <TableLayout
+        android:id="@+id/tableLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.00999999">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:text="@string/country"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Spinner
+            android:paddingLeft="20dp"
+            android:id="@+id/country2"
+            android:entries="@array/country"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+
+            >
+
+        </Spinner>
+
+       <View
+           android:layout_height="7dp"/>
+        <TextView
+            android:text="@string/quali" />
+
+        <EditText
+            android:id="@+id/qualii"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="GCE A/AS Level" />
+
+<View
+    android:layout_height="2dp"
+  />
+
+        <View
+            android:layout_height="7dp"/>
+        <TextView
+            android:text="@string/course_interest"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/courseofinterest"
+            android:hint="Business"/>
+        <View
+            android:layout_height="7dp"/>
+
+        <TextView
+            android:text="@string/study_mode" />
+
+        <Spinner
+            android:id="@+id/studymode2"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/study_mode"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+
+        <View
+            android:layout_height="7dp"/>
+
+        <TextView
+            android:text="@string/session" />
+<LinearLayout
+    android:weightSum="2">
+        <Spinner
+            android:id="@+id/month"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:entries="@array/session"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="180dp"
+            android:id="@+id/year"
+            android:entries="@array/year"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+
+            />
+</LinearLayout>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/back"
+        android:text="@string/register"
+        android:textColor="#fde9e7e7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout5" />
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

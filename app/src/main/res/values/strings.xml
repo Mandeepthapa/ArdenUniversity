@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Arden</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="Username">USERNAME</string>
+    <string name="Gender">GENDER</string>
+    <string name="Email">EMAIL</string>
+    <string name="DOB">DATE OF BIRTH</string>
+    <string name="FirstName">FIRST NAME</string>
+    <string name="LastName">LAST NAME</string>
+    <string name="profile">Profile</string>
+    <string name="Interest">Interests</string>
+    <string name="Fav">Favourites</string>
+    <string name="username">david.beckham</string>
+    <string name="gender">Male</string>
+    <string name="firstname">David</string>
+    <string name="lastname">Beckham</string>
+    <string name="email">david.beckham@gmail.com</string>
+    <string name="dob">02 May 1975</string>
+    <string name="fullname">David Beckham</string>
+    <string name="edit">Edit Profile</string>
+    <string name="save">Save Changes</string>
+    <string name="course">Courses</string>
+    <string name="institutions">Institutions</string>
+    <string name="locations">Locations</string>
+    <string name="scholarship">Scholorship</string>
+    <string name="day">02</string>
+    <string name="month">May</string>
+    <string name="year">1972</string>
+    <string name="add">Add Interest</string>
+    <string name="country">RESIDING COUNTRY</string>
+    <string name="quali">QUALIFICATION</string>
+    <string name="course_interest">COURSE INTERESTED</string>
+    <string name="study_mode">STUDY MODE</string>
+    <string name="session_start">SESSION_START</string>
+    <string name="video">University of Arden Videos</string>
+    <string name="vidname">Welcome to University of Arden</string>
+    <string name="totalvid">All Videos(10)</string>
+    <string name="popvid">Popular Videos</string>
+    <string name="session">SESSION/START DATE</string>
+    <string name="register">REGISTER INTEREST</string>
+    <string name="pros">University of Arden Prospectus</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Third Gender</item>
+    </string-array>
+    <string-array name="study_mode">
+        <item>Part Time</item>
+        <item>Full Time</item>
+    </string-array>
+    <string-array name="country">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>China</item>
+        <item>Australia</item>
+        <item>USA</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Spain</item>
+    </string-array>
+    <string-array name="session">
+        <item>Jan</item>
+        <item>June</item>
+    </string-array>
+    <string-array name="year">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+    </string-array>
+</resources>

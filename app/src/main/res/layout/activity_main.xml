@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:configChanges="orientation|keyboardHidden"
+    tools:context="com.project.mandeep.userprofile.UserProfileInfo">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/back"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/david"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/edit_profile"
+        android:textColor="@color/toolbar_color_control_normal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TableRow android:padding="12dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_column="1"
+                android:layout_gravity="start"
+                android:text="@string/Username"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:text="@string/username"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="25dp"/>
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <TableRow android:padding="12dp">
+
+            <TextView
+                android:id="@+id/firstname"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:text="@string/FirstName"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/FirstName"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:layout_gravity="end"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/firstname"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TableRow android:padding="12dp">
+
+            <TextView
+                android:id="@+id/lastname"
+                android:layout_column="1"
+                android:text="@string/LastName"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/LastName"
+                android:layout_width="205dp"
+                android:layout_column="2"
+                android:layout_gravity="end"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="22dp"
+                android:text="@string/lastname"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TableRow android:padding="12dp">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_column="1"
+                android:text="@string/Gender"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Gender"
+                android:layout_width="205dp"
+                android:layout_column="2"
+                android:layout_gravity="end"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="22dp"
+                android:text="@string/gender" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TableRow android:padding="12dp">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_column="1"
+                android:text="@string/Email"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="262dp"
+                android:layout_column="2"
+                android:layout_gravity="end"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="22dp"
+                android:text="@string/email" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TableRow android:padding="12dp">
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_column="1"
+                android:text="@string/DOB"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/DOB"
+                android:layout_width="205dp"
+                android:layout_column="2"
+                android:layout_gravity="end"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/dob" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    </TableLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#D3D3D3"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+           android:padding="18dp"
+            android:text="@string/profile"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           android:padding="18dp"
+            android:text="@string/Interest"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="18dp"
+            android:text="@string/Fav"
+            android:textSize="15sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="@string/fullname"
+        android:layout_width="118dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/toolbar_color_control_normal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Overflow"
+        app:theme="@style/ToolbarTheme">
+
+        <ImageView
+            tools:ignore="ContentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <ImageView
+            tools:ignore="ContentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingRight="20dp"
+            android:paddingLeft="0dp"
+            android:src="@drawable/ic_more_vert_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/profile"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="1.0">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5">
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_home_black_24dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/account"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_account_balance_black_24dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search_black_24dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/favo"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/userinfo"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_person_outline_black_24dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"
+/>
+</LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
